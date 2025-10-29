@@ -1,0 +1,18 @@
+PROGRAM <name>;
+BEGIN VAR INT_2  aAA , bBB, xXX, yYY; 
+  INPUT  (aAA); 
+  INPUT (bBB);
+  
+  OUTPUT ( aAA +  bBB);  
+  OUTPUT (aAA -  bBB); 
+  OUTPUT ( aAA *  bBB); 
+  OUTPUT (aAA DIV  bBB); 
+  OUTPUT ( aAA MOD  bBB); 
+
+(aAA -  bBB) * 10 + (aAA +  bBB) DIV 10 =: xXX; 
+xXX + xXX MOD 10 =: yYY; 
+
+  PUT (xXX); 
+  PUT ( yYY);
+
+END
