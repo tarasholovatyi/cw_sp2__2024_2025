@@ -1,0 +1,21 @@
+PROGRAM <name>;
+BEGIN VAR INT_2  aAA, bBB, cYA, cYB, xVL;
+  INPUT (aAA);
+  INPUT (bBB);
+
+ REPEAT {
+OUTPUT ( cYA * cYA );
+} UNTIL bBB LT cYA;
+
+  0 =: xVL;
+  1 =: cYA;
+  1 =: cYB;
+  REPEAT {
+	REPEAT {
+		xVL + 1 =: xVL;
+	} UNTIL cYB LT bBB;
+} UNTIL cYA LT aAA;
+
+  OUTPUT (xVL);
+
+END
