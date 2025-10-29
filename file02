@@ -1,0 +1,37 @@
+PROGRAM <name>;
+BEGIN VAR INT_2  aAA , bBB, cCC, mAX;
+  GET (aAA );
+  GET (bBB);
+  GET (cCC);
+
+
+  IF aAA  GT bBB && aAA  GT cCC {
+     mAX := aAA;
+  } ELSE IF bBB GT aAA && bBB GT cCC {
+     mAX := bBB;
+  } ELSE {
+     mAX := cCC;
+  }
+  OUTPUT (mAX);
+
+
+  IF ( aAA  = bBB ) && ( aAA  = cCC) && ( bBB = cCC) {
+    OUTPUT (1);
+  } ELSE {
+    OUTPUT (0);
+  }
+    
+
+  IF !! ( aAA GT 0 ) ||!! (bBB GT 0 )  ||!! (cCC GT 0 ) {
+    OUTPUT (-1);
+  } ELSE {
+    OUTPUT (0);
+  }
+
+  IF ( aAA  GT ( bBB + cCC) ) {
+    OUTPUT (10);
+  } ELSE {
+    OUTPUT (0);
+  }
+ 
+END
